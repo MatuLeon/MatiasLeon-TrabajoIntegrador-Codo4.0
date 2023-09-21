@@ -301,6 +301,48 @@
     background-color: white;
 }
 
+
+
+/*-----------------FORMULARIO----------------- */
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    width: 300px;
+    margin: 5px 5px 0 5px;
+}
+
+.container-Form>div{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.container-Form p {
+    margin-bottom:  0;
+}
+
+.form-NameLastName{
+    width: min-content;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.form-TextArea{
+    border: red solid 3px;
+    margin-top: 30px;
+    resize: none;
+    width: max-content;
+}
 /* Footer */
 footer {
     background: linear-gradient(90deg, rgba(2, 0, 36, 0.9682247899159664) 0%, rgb(3, 64, 95) 36%, rgb(2, 74, 102) 100%);

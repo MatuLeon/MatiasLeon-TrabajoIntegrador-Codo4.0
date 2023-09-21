@@ -28,13 +28,13 @@
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./index.html">La conferencia</a>
+                            <a class="nav-link" aria-current="page" href="#bannerPrincipal">La conferencia</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/remeras.html">Los oradores</a>
+                            <a class="nav-link" href="#oradores">Los oradores</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/sublimados.html">El lugar y la fecha</a>
+                            <a class="nav-link" href="#lugarOratoria">El lugar y la fecha</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./pages/como-comprar.html">Conviertete en orador</a>
@@ -50,6 +50,7 @@
     </header>
 
     <main>
+    <!----------------------- Banner Principal  ---------------------------->
         <section id="bannerPrincipal">
             <div class="bannerPrincipal">
                 <h1>Conferencia Buenos Aires</h1>
@@ -66,6 +67,7 @@
             </div>
         </section>
 
+        <!--------------------------- ORADORES  ---------------------->
 
         <section id="oradores">
             <h2 class="titleCards">
@@ -115,7 +117,9 @@
                 </article>
         </section>
 
-        <section class="lugarOratoria">
+
+        <!----------------------Lugar de la Oratoria ------------------------------- -->
+        <section class="lugarOratoria" id="lugarOratoria">
             <img src="./assets/honolulu.jpg" alt="honolulu" class="img-Honolulu">
             <div class="lugarOratoria__description">
                 <h3>Bs As - Octubre</h3>
@@ -124,6 +128,28 @@
             </div>
         </section>
 
+
+
+        <!--------------------------Formulario  ------------------------------------>
+        <section class="container-Form" id="formulario">
+            <div>
+                <p>Conviértete en un </p>
+                <H4>ORADOR</H4>
+                <p>Anótate como orador para dar una charla.ignite. Cuéntanos de que quieres hablar!</p>
+            </div>
+            <form action="">
+                <div class="form-NameLastName">
+                        <label for="Name"></label>
+                        <input type="text" placeholder="Nombre">
+                        <label for="lastName"></label>
+                        <input type="text" placeholder="Apellido">
+                </div>
+                <div class="form-TextArea">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Sobre qué quieres hablar'"></textarea>
+                </div>
+            </form>
+    
+        </section>
     </main>
 
 
