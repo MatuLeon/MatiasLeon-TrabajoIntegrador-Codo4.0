@@ -385,6 +385,7 @@ footer>ul {
     justify-content: space-around;
     padding: 10px;
     align-items: center;
+    margin-bottom: 0;
 }
 
 footer>ul>li {
