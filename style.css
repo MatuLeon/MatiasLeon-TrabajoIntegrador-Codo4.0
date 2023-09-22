@@ -23,6 +23,9 @@
     color: white;
     align-items: center;
 }
+.navbar-toggler{
+    background-color: white;
+}
 
 .containerLogoCodo p{
     padding-top: 20px;
@@ -353,7 +356,7 @@ textarea{
 }
 
 .btn-Form{
-    background-color: rgb(51, 177, 51);
+    background-color: rgb(59, 207, 59);
     width: 100%;
     padding: 4px;
     margin-bottom: 10px;
