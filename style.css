@@ -146,7 +146,7 @@
 
 }
 
-/* cards */
+/* ---------------------CARDS----------------------- */
 
 .titleCards {
     display: flex;
@@ -178,7 +178,6 @@
 
 .card {
     display: flex;
-    /* flex-direction: column; */
     width: 300px;
     height: auto;
     border: 1px solid rgba(220, 220, 220, 0.911);
@@ -246,7 +245,6 @@
 
 
 .card__text--title {
-    /* font-weight: 600; */
     margin: 10px 0;
 }
 
@@ -256,7 +254,7 @@
 
 
 
-
+/* -------------------------Oratoria------------------ */
 .lugarOratoria{
     max-width: 100vw;
     width: auto;
@@ -376,7 +374,7 @@ textarea{
 
 
 
-/* Footer */
+/* --------------------------Footer --------------------------*/
 footer {
     background: linear-gradient(90deg, rgba(2, 0, 36, 0.9682247899159664) 0%, rgb(3, 64, 95) 36%, rgb(2, 74, 102) 100%);
 
@@ -403,19 +401,15 @@ footer>ul>li>a {
     font-size: 15px;
 }
 
-/* Media queries */
-
-@media (max-width: 768px) {
-    .bannerPrincipal {
-        padding: 5% 2% 5% 20vw;
-        align-content: center;
-        justify-content: center;
-    }
-}
+/* --------------------------Media queries-------------------------- */
 
 @media (max-width: 480px) {
+
+
     .bannerPrincipal {
-        padding: 0 2% 0 10vw;
+        padding: 0;
+        text-align: center;
+        align-items: center;
         align-content: center;
         justify-content: center;
     }
@@ -426,8 +420,61 @@ footer>ul>li>a {
     }
 
     .bannerPrincipal>div>button {
-        padding: 8px 18px;
+        padding: 8px 10px;
         font-size: 16px;
         margin-top: 12px;
+    }
+
+    .lugarOratoria{
+        flex-direction: column;
+
+    }
+
+    .img-Honolulu{
+        width: 100vw;
+    }
+
+    .lugarOratoria__description{
+        width: 100vw;
+    }
+
+    .form-NameLastName{
+        display: inline;
+    }
+
+    .form-TextArea{
+        width: max-content;
+    }
+
+    .btn-Form{
+        margin: 10px 0;
+    }
+    
+    footer > ul{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100vw;
+    }
+
+    footer ul li{
+        padding: 10px 0px;
+        width: auto;
+    }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+    .navbar .container-fluid {
+        justify-content: space-between;
+    }
+    .bannerPrincipal {
+        padding: 0;
+        align-content: center;
+        justify-content: center;
     }
 }
