@@ -319,7 +319,8 @@ form {
 }
 
 input{
-    width: 300px;
+    width: max-content;
+    padding: 2px;
     margin: 5px 5px 0 5px;
 }
 
@@ -346,6 +347,7 @@ input{
 textarea{
     resize: none;
     width: 100%;
+    padding: 3px 0 0 10px;
 }
 
 .form-TextArea{
@@ -362,28 +364,34 @@ textarea{
     color: white;
     border: none;
     border-radius: 5px;
-    margin-bottom: 15vh;
+    margin-bottom: 10vh;
 }
+
+
 
 
 /* -----------------------------TICKETS------------------------ */
 
-.tickets{
+.cards-Tickets-Container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    font-family: 'Roboto', sans-serif;
-    width: 100vw;
-
+    border: solid 3px pink;
 }
 
-.card__tickets{
+.tickets{
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+    gap: 5px;
 }
 
-.card__tickets p:last-child{
+.tickets p:last-child{
     color: grey;
+}
+
+.ticket{
+    width: max-content;
+    padding: 10px;
 }
 
 .student{
@@ -395,27 +403,20 @@ textarea{
 }
 
 .junior{
-    border: solid 1px rgb(241, 249, 24);
-
+    border: solid 1px rgb(255, 255, 0);
 }
 
 
-.container-Form-Tickets{
+.form-Container{
+    border: solid red 2px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    width: 75%;
 }
 
-.formTickets{
-    border: solid red 2px;
-
-}
-
-.form--NameSurname{
-    display: flex;
-    flex-direction: row;
-    border: solid 2px pink;
+.form-Tickets{
+    max-width: 100%;
 }
 
 /* --------------------------Footer --------------------------*/

@@ -95,7 +95,7 @@
                         <div class="card__text">
                             <span class="card__text--subtitleA">Javascript</span>
                             <span class="card__text--subtitleB">React</span>
-                            <h3 class="card__text--title">Bill Gatess</h3>
+                            <h3 class="card__text--title">Bill Gates</h3>
                             <p class="card__text--description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                                 Corrupti, perspiciatis cum quasi deleniti atque dolores fugiat cupiditate voluptatem
                                 natus, omnis iure quos impedit dicta tenetur id placeat ea blanditiis molestias?</p>
@@ -146,7 +146,7 @@
                         <input type="text" placeholder="Apellido">
                 </div>
                 <div class="form-TextArea">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Sobre qué quieres hablar'"></textarea>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="¿Sobre qué quieres hablar?"></textarea>
                     <p>Recuerda incluir un título para tu charla</p>
                 </div>
                 <button class="btn-Form">Enviar</button>
@@ -155,64 +155,57 @@
 
 
 
-        <!---------------------COMPRAR TICKETS-------------------- -->
-        <section class="tickets">
-            <div class="cards">
-                <article class="card">
-                    <div class="card__tickets student">
-                        <h3 class="card__text--title">Estudiante</h3>
-                        <p class="card__text--description">Tienen un descuento de</p>
+        <!----------TICKETS------------->
+        <section class="cards-Tickets-Container">
+            <div class="cards tickets">
+                <div class="ticket student">
+                    <h3 class="card__text--title ">Estudiante</h3>
+                        <p>Tienen un descuento</p>
                         <p><strong>80%</strong></p>
                         <p>*presentar documentación</p>
-                    </div>
-                </article>
-            
-                <article class="card">
-                    <div class="card__tickets trainee">
-                        <h3 class="card__text--title">Trainee</h3>
-                        <p class="card__text--description">Tienen un descuento de</p>
+                </div>
+    
+                <div class="ticket trainee">
+                    <h3 class="card__text--title ">Trainee</h3>
+                        <p>Tienen un descuento</p>
                         <p><strong>50%</strong></p>
                         <p>*presentar documentación</p>
-                    </div>
-                </article>
-            
-                <article class="card">
-                    <div class="card__tickets junior">
-                        <h3 class="card__text--title">Junior</h3>
-                        <p class="card__text--description">Tienen un descuento de</p>
+                </div>
+    
+                <div class="ticket junior">
+                    <h3 class="card__text--title ">Junior</h3>
+                        <p>Tienen un descuento</p>
                         <p><strong>15%</strong></p>
                         <p>*presentar documentación</p>
-    
-                    </div>
-                </article>
+                </div>
             </div>
-
-            <div class="container-Form-Tickets">
+            
+            <!-------------- FORMULARIO TICKETS ------------>
+            <div class="form-Container">
                 <p>VENTA</p>
-                <h3>VALOR DE TICKET 200$</h3>
-                <form action="" class="formTickets" id="formTickets">
-
-                    <div class="form--NameSurname">
-                        <label for="nameTicket"></label>
-                        <input type="text" name="nameTicket" placeholder="Nombre">
-    
-                        <label for="lastNameTicket"></label>
-                        <input type="text" name="lastNameTicket" placeholder="Apellido">
+                <H3>VALOR DE TICKET: $200</H3>
+                <form action="" class="form-Tickets">
+                    <div>
+                        <label for=""></label>
+                        <input type="text" placeholder="Nombre">
+                        <label for=""></label>
+                        <input type="text" placeholder="Apellido">
                     </div>
-
-                    <label for="email"></label>
-                    <input type="email" placeholder="Correo electrónico">
-
-                    <div class="form--Cantidad">
-                        <label for="Cantidad">Cantidad</label>
-                        <input type="text">
-                        <select name="formTickets" id="">
-                            <option value="estudiante">Estudiante</option>
-                            <option value="trainee">Trainee</option>
-                            <option value="junior">Junior</option>
+    
+    
+                    <label for=""></label>
+                    <input type="text" placeholder="Correo electrónico">
+                    <div>
+                        <label for="">Cantidad</label>
+                        <input type="text" placeholder="Cantidad">
+    
+                        <select name="" id="">
+                            <option value="1">Estudiante</option>
+                            <option value="2">Trainee</option>
+                            <option value="3">Junior</option>
                         </select>
                     </div>
-
+    
                 </form>
             </div>
         </section>
