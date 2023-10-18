@@ -40,7 +40,7 @@
                             <a class="nav-link" href="#formulario">Conviertete en orador</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Comprar tickets</a>
+                            <a class="nav-link" href="#tickets">Comprar tickets</a>
                         </li>
                     </ul>
                 </div>
@@ -155,29 +155,29 @@
 
 
 
-        <!----------TICKETS------------->
-        <section class="cards-Tickets-Container">
+        <!--------------------------TICKETS---------------------------->
+        <section class="cards-Tickets-Container" id="tickets">
             <div class="cards tickets">
+
                 <div class="ticket student">
                     <h3 class="card__text--title ">Estudiante</h3>
                         <p>Tienen un descuento</p>
                         <p><strong>80%</strong></p>
                         <p>*presentar documentación</p>
                 </div>
-    
                 <div class="ticket trainee">
                     <h3 class="card__text--title ">Trainee</h3>
                         <p>Tienen un descuento</p>
                         <p><strong>50%</strong></p>
                         <p>*presentar documentación</p>
                 </div>
-    
                 <div class="ticket junior">
                     <h3 class="card__text--title ">Junior</h3>
                         <p>Tienen un descuento</p>
                         <p><strong>15%</strong></p>
                         <p>*presentar documentación</p>
                 </div>
+
             </div>
             
             <!-------------- FORMULARIO TICKETS ------------>
@@ -185,27 +185,48 @@
                 <p>VENTA</p>
                 <H3>VALOR DE TICKET: $200</H3>
                 <form action="" class="form-Tickets">
-                    <div>
-                        <label for=""></label>
-                        <input type="text" placeholder="Nombre">
-                        <label for=""></label>
-                        <input type="text" placeholder="Apellido">
+                    <div class="form-Tickets-Names">
+                        <div>
+                            <label for=""></label>
+                            <input type="text" placeholder="Nombre" class="input-Tickets">
+                        </div>
+                        <div>
+                            <label for=""></label>
+                            <input type="text" placeholder="Apellido" class="input-Tickets">
+                        </div>
                     </div>
-    
-    
-                    <label for=""></label>
-                    <input type="text" placeholder="Correo electrónico">
-                    <div>
-                        <label for="">Cantidad</label>
-                        <input type="text" placeholder="Cantidad">
-    
-                        <select name="" id="">
-                            <option value="1">Estudiante</option>
-                            <option value="2">Trainee</option>
-                            <option value="3">Junior</option>
-                        </select>
+
+                    <div class="form-Tickets-Email">
+                        <label for=""></label>
+                        <input type="text" placeholder="Correo electrónico" class="input-Tickets">
                     </div>
-    
+
+                    <div class="form-Tickets-Category">
+                        <div>
+                            <label for="" class="quantity">Cantidad</label>
+                            <input type="text" placeholder="Cantidad" class="input-Tickets">
+                        </div>
+                        <div class="category">
+                            <label for="">Categoria</label>
+                            <select name="" id="">
+                                <option value="0" selected></option>
+                                <option value="1">Estudiante</option>
+                                <option value="2">Trainee</option>
+                                <option value="3">Junior</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!---------------------------- PAGO Y BOTONES -------------->
+                    <div class="form-Payment">
+                        <span>Total a pagar: $ </span>
+                        <span>0</span>
+                    </div>
+
+                    <div class="form-btns">
+                        <button type="reset">Borrar</button>
+                        <button type="button">Resumen</button>
+                    </div>
                 </form>
             </div>
         </section>
