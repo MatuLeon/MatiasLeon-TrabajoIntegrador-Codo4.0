@@ -227,11 +227,37 @@
 
                     <div class="form-btns">
                         <button type="reset" id="reset">Borrar</button>
-                        <button type="button" id="buyIt">Resumen</button>
+                        <button type="button"  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="btn-Resumen">
+                            Resumen
+                        </button>
                     </div>
                 </form>
             </div>
         </section>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Verifique los datos</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <p>Nombre Completo: <span></span></p>
+                <p>Correo: <span></span></p>
+                <p>Cantidad de tickets: <span></span></p>
+                <p>Descuento aplicado: <span></span></p>
+                <p>Total a pagar: <span></span></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Volver</button>
+                <button type="button" class="btn btn-success">Comprar</button>
+            </div>
+        </div>
+    </div>
+</div>
 
     </main>
 

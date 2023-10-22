@@ -3,6 +3,7 @@ let quantity = document.getElementById("quantity");
 let option;
 let num;
 
+
 category.addEventListener("change", function () {
     let optionCategory = category.options[category.selectedIndex];
     option = optionCategory.text;
@@ -56,20 +57,34 @@ function cleanPayment(i) {
     });
 }
 
-function buyTicket(i){
-    let btn = document.getElementById("buyIt");
-    btn.addEventListener("click", () => {
-        i.textContent = "";
-        option = "";
-        num = "";
-        category.value = ''
-        quantity.value = ''
-        Swal.fire({
-            position: "center",
-            icon: "success",
-            title: "Compra realizada",
-            showConfirmButton: false,
-            timer: 1500,
-        });
-    });
-}
+
+const btnResumen = document.getElementById('btn-Resumen')
+
+btnResumen.addEventListener('click', ()=>{
+    let body = document.getElementById('modal-body');
+    body.innerHTML = `
+    <div>                
+        <p>Nombre Completo:<span>${option}</span></p>
+        <p>Correo:<span>${num}</span></p>
+        <p>Cantidad de tickets: <span></span></p>
+        <p>Descuento aplicado: <span></span></p>
+        <p>Total a pagar: <span></span></p>
+    </div>`
+})
+// function buyTicket(i){
+//     let btn = document.getElementById("buyIt");
+//     btn.addEventListener("click", () => {
+//         i.textContent = "";
+//         option = "";
+//         num = "";
+//         category.value = ''
+//         quantity.value = ''
+//         Swal.fire({
+//             position: "center",
+//             icon: "success",
+//             title: "Compra realizada",
+//             showConfirmButton: false,
+//             timer: 1500,
+//         });
+//     });
+// }
