@@ -185,21 +185,21 @@
             <div class="form-Container">
                 <p>VENTA</p>
                 <H3>VALOR DE TICKET: $200</H3>
-                <form action="" class="form-Tickets">
+                <form action="" class="form-Tickets" id="formTickets">
                     <div class="form-Tickets-Names">
                         <div>
-                            <label for=""></label>
-                            <input type="text" placeholder="Nombre" class="input-Tickets">
+                            <label for="name"></label>
+                            <input type="text" placeholder="Nombre" class="input-Tickets" id="name" >
                         </div>
                         <div>
-                            <label for=""></label>
-                            <input type="text" placeholder="Apellido" class="input-Tickets">
+                            <label for="lastName"></label>
+                            <input type="text" placeholder="Apellido" class="input-Tickets" id="lastName">
                         </div>
                     </div>
 
                     <div class="form-Tickets-Email">
-                        <label for=""></label>
-                        <input type="text" placeholder="Correo electrónico" class="input-Tickets">
+                        <label for="email"></label>
+                        <input type="text" placeholder="Correo electrónico" class="input-Tickets" id="email">
                     </div>
 
                     <div class="form-Tickets-Category">
@@ -227,7 +227,8 @@
 
                     <div class="form-btns">
                         <button type="reset" id="reset">Borrar</button>
-                        <button type="button"  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="btn-Resumen">
+                        <!-------------- BUTTON MODAL ------------>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="btn-Resumen">
                             Resumen
                         </button>
                     </div>
@@ -236,28 +237,28 @@
         </section>
 
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Verifique los datos</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body" id="modal-body">
-                <p>Nombre Completo: <span></span></p>
-                <p>Correo: <span></span></p>
-                <p>Cantidad de tickets: <span></span></p>
-                <p>Descuento aplicado: <span></span></p>
-                <p>Total a pagar: <span></span></p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Volver</button>
-                <button type="button" class="btn btn-success">Comprar</button>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Verifique los datos</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="modal-body">
+                        <p>Nombre Completo: </p><span></span>
+                        <p>Correo: </p><span></span>
+                        <p>Cantidad de tickets: </p><span></span>
+                        <p>Descuento aplicado: </p><span></span>
+                        <p>Total a pagar: </p><span></span>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Volver</button>
+                        <button type="button" class="btn btn-success" id="btn-Success">Comprar</button>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
 
     </main>
 
