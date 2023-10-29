@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
-/* Agregar interlineado en el párrafo del banner */
-/*  Agregar li en el header que diga CONFERENCIA BS AS a la derecha del logo */
+
 
 * {
     margin: 0;
@@ -408,7 +407,7 @@ textarea{
 }
 
 
-.form-Container{
+.formTickets-Container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -616,6 +615,16 @@ footer>ul>li>a {
         text-align: center;
     }
     
+    .formTickets-Container{
+        max-width: 100%;
+    }
+
+    .form-Tickets{
+        max-width: 90%;
+        width: 100%;
+    }
+
+
     footer ul{
         flex-wrap: wrap;
         justify-content: space-evenly;

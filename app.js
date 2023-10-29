@@ -27,16 +27,17 @@ quantity.addEventListener("input", () => {
 });
 
 function payment(num, type) {
+    let ticketPrice = 200
     resultado;
     let pay = document.getElementById("payment");
     if (type === "Estudiante") {
-        resultado = Math.round(200 * (1 - 0.8) * num);
+        resultado = Math.round(ticketPrice * (1 - 0.8) * num);
         pay.textContent = resultado;
     } else if (type === "Trainee") {
-        resultado = Math.round(200 * (1 - 0.5) * num);
+        resultado = Math.round(ticketPrice * (1 - 0.5) * num);
         pay.textContent = resultado;
     } else if (type === "Junior") {
-        resultado = Math.round(200 * (1 - 0.15) * num);
+        resultado = Math.round(ticketPrice * (1 - 0.15) * num);
         pay.textContent = resultado;
     }
     cancelPayment(pay);
@@ -100,17 +101,6 @@ function butIt(){
     })
 
 }
+
+
 showResumen()
-
-// 
-// function buyTicket(i){
-//     let btn = document.getElementById("buyIt");
-//     btn.addEventListener("click", () => {
-//         i.textContent = "";
-//         option = "";
-//         num = "";
-//         category.value = ''
-//         quantity.value = ''
-
-//     });
-// }
