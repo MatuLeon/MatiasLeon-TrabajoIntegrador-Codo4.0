@@ -376,8 +376,6 @@ textarea{
     flex-direction: column;
     align-items: center;
     font-family: 'Roboto', sans-serif;
-
-
 }
 
 .tickets{
@@ -386,9 +384,13 @@ textarea{
     gap: 8px;
 }
 
+
+
 .tickets p:last-child{
     color: grey;
 }
+
+
 
 .ticket{
     padding: 10px;
@@ -408,11 +410,12 @@ textarea{
 
 
 .formTickets-Container{
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 75%;
-    width: 100%;
+    max-width: 75%; /*Determina el tamaño maximo que puede tener el contenedor*/
+    width: 100%; 
 }
 
 .form-Tickets{
@@ -429,7 +432,7 @@ textarea{
 
 .form-Tickets-Names{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between ;
 }
 
 .form-Tickets-Names>div{
@@ -483,7 +486,6 @@ select{
     background-color: hsl(180, 53%, 85%);
     color:hsl(198, 62%, 27%) ;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
@@ -529,7 +531,6 @@ select{
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     font-size: 16px;
-
 }
 
 

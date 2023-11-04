@@ -1,20 +1,31 @@
-let category = document.getElementById("category");
-let quantity = document.getElementById("quantity");
+let category = document.getElementById('category');
+let quantity = document.getElementById('quantity')
 let form = document.getElementById('formTickets')
 let option;
 let num;
 let resultado
 
 
-category.addEventListener("change",  () =>{
+quantity.addEventListener("input", validationNum);
+
+category.addEventListener("change", catchCategory);
+
+
+
+//FUNCIONES
+
+//Función para captar la opción seleccionada
+function catchCategory(){
     let optionCategory = category.options[category.selectedIndex];
     option = optionCategory.text;
     payment(num, option);
-});
+}
 
-quantity.addEventListener("input", () => {
+//Función para validar cantidad de tickets
+function validationNum(){
     num = quantity.value;
     let validation = /^[0-9]+$/;
+    //Si pasa esto, ejecutamos este codigo
     if (!validation.test(num) && num != 0) {
         document.getElementById("messageError").className = "messageError";
         document.getElementById("messageError").textContent =
@@ -24,8 +35,10 @@ quantity.addEventListener("input", () => {
         document.getElementById("messageError").textContent = "";
         payment(num, option);
     }
-});
+}
 
+
+//Función para sacar la cuenta por numero de tickets y descuento según elección
 function payment(num, type) {
     let ticketPrice = 200
     resultado = 0;
@@ -42,9 +55,12 @@ function payment(num, type) {
     cancelPayment();
 }
 
+
+//Función para cancelar pago y vaciar formulario
 function cancelPayment() {
     let btn = document.getElementById("reset");
     btn.addEventListener("click", () => {
+        resultado = undefined
         document.getElementById('payment').textContent = 0;
         option = "";
         num = "";
@@ -58,6 +74,9 @@ function cancelPayment() {
     });
 }
 
+
+
+//Función para mostrar el total a pagar
 function showResumen(){
     document.getElementById('btn-Resumen').addEventListener('click', ()=>{
         if(resultado !== undefined){
@@ -67,5 +86,5 @@ function showResumen(){
 
 }
 
-
 showResumen()
+
