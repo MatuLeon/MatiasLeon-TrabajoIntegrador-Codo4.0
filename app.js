@@ -86,5 +86,6 @@ function showResumen(){
 
 }
 
+//Llamamos a la función showResumen()
 showResumen()
 
